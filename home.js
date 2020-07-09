@@ -57,3 +57,37 @@ for( i =0; i< 10; i++)
     console.log(i+10);
 }
 
+//Strings in JS
+var vegetable = 'Cauliflower';
+console.log(vegetable.length);
+console.log(vegetable.indexOf('l'));
+console.log(vegetable.slice(1,4));
+console.log(vegetable.replace('l','b'));
+vegetable = "Cabbage";
+var index = vegetable.indexOf('b');
+var veg = vegetable.slice(0,index);
+console.log(veg);
+vegetable = vegetable.slice(index , vegetable.length);
+console.log(vegetable);
+console.log(veg+ vegetable);
+vegetable = veg + vegetable;
+index = vegetable.indexOf('g');
+console.log(vegetable.charAt(index));
+var splitarr = vegetable.split('');
+console.log(splitarr);
+var splitarr2 = 'Cauliflower'.split('');
+console.log(splitarr2);
+splitarr = splitarr.concat(splitarr2);
+console.log(splitarr);
+
+//Arrays in JS
+let arr = new Array('apple', 'banana','tomato', 'watermelon');
+console.log(arr);
+arr[1] = 'avocado';
+console.log(arr);
+console.log(arr.toString());
+console.log(arr);
+arr = arr.toString();
+console.log(arr);
+let arr2 = new Array(arr);
+console.log(arr2);
