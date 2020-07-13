@@ -81,7 +81,7 @@ splitarr = splitarr.concat(splitarr2);
 console.log(splitarr);
 
 //Arrays in JS
-let arr = new Array('apple', 'banana','tomato', 'watermelon');
+let arr =  new Array('apple', 'banana','tomato', 'watermelon');
 console.log(arr);
 arr[1] = 'avocado';
 console.log(arr);
@@ -89,5 +89,48 @@ console.log(arr.toString());
 console.log(arr);
 arr = arr.toString();
 console.log(arr);
-let arr2 = new Array(arr);
+let arr2 = new Array('apple', 'banana','tomato', 'watermelon');
+console.log(arr2); 
+console.log(arr2,arr2.pop(),arr2);
+console.log(arr2.push('hi'),'Yeh dekho',arr2);
+arr2[arr2.length+1] = 'Bye';
 console.log(arr2);
+arr2[32] = 'Very random element';
+console.log(arr2.length);
+console.log(arr2);
+arr2.shift();  //Very expensive
+console.log(arr2);
+arr2.unshift("nokai");
+console.log(arr2)
+arr2.slice(arr2.indexOf("Bye"),32);   // Returns a new object
+console.log(arr2)
+console.log(arr2.splice(23,arr2.length));   //Removes the specified indexed elements and returns them as another array
+console.log(arr2)
+let nums = [5,4,3,2,1];
+console.log(nums.sort());   //Sorted for life
+console.log(nums)
+console.log(nums.sort(function(a,b){ return b-a}));  //In descending order , this is a kind of filter, we can pass anything
+console.log(nums.sort(function(a,b){ return a-b}));   // In ascending order
+let sum = 0;
+for(let i =0 ;i<nums.length;i++)
+{
+    sum+= nums[i];
+}
+console.log(sum)
+
+//Objects(Dictionary) in Javascript
+let Varad = "nothing"
+let student = {'Varad':'Karpe', Hi: 'okay', 'age': 22 , 'gender' :  'M' , 'Qualification': 'UG',
+    foc : function()
+    {
+        console.log(student['Varad'])
+        console.log(student.Hi)
+        console.log(student['age'])
+        console.log(student['gender'])        
+    }
+}
+
+student.foc()
+
+
+//Dealing with json
