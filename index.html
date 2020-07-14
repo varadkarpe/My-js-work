@@ -9,18 +9,22 @@
     <h2 id="h2">Boys</h2>
     <!--<script src="home.js"> </script>-->
     <script>
-        let job = [
+        let job = 
+        `[
             {
-                'Name':'Varad Karpe',
-                'Company' : 'ClassMethod Inc',
-                'Language': 'Java'
+                "Name":"Varad Karpe",
+                "Company" : "ClassMethod Inc",
+                "Language":"Java"
             },
             {
-                'Name':'John Doe',
-                'Company' : 'Amex',
-                'Language': 'Javascript'
+                "Name" : "Nabil Mahtab",
+                "Company" : "Amex",
+                "Language" : "Node js"
             }
-        ]
+        ]`
+        console.log(JSON.parse(job)) 
+        console.log(JSON.parse(job)[0]['Language'])
+        console.log(JSON.parse(job)[1].Company)
     </script>
     
     
