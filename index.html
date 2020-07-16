@@ -2,31 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title name="title">Working with script tag</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Website</title>
 </head>
 <body>
-    <h1 id="h1">GG</h1>
-    <h2 id="h2">Boys</h2>
-    <!--<script src="home.js"> </script>-->
-    <script>
-        let job = 
-        `[
-            {
-                "Name":"Varad Karpe",
-                "Company" : "ClassMethod Inc",
-                "Language":"Java"
-            },
-            {
-                "Name" : "Nabil Mahtab",
-                "Company" : "Amex",
-                "Language" : "Node js"
-            }
-        ]`
-        console.log(JSON.parse(job)) 
-        console.log(JSON.parse(job)[0]['Language'])
-        console.log(JSON.parse(job)[1].Company)
-    </script>
-    
-    
+    <div class="container-1">
+        <h2>Challenge 1: Your in Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger">Reset</button>
+            </div>
+            <div class="container-2"></div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
 </body>
 </html>

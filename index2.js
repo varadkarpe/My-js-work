@@ -135,3 +135,5 @@ student.foc()
 
 //Dealing with json
 //This section is present in the corresponding html file
+
+//If you want this file to run then uncomment the script tag from index2.html
